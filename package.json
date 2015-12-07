@@ -1,0 +1,28 @@
+{
+  "name": "elm-workshop",
+  "version": "0.0.0",
+  "description": "Twitter UK Elm Workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "elm-reactor",
+    "build": "elm-make src/Main.elm --output index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/passy/elm-workshop.git"
+  },
+  "keywords": [
+    "elm",
+    "workshop",
+    "starter"
+  ],
+  "author": "Pascal Hartig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/passy/elm-workshop/issues"
+  },
+  "homepage": "https://github.com/passy/elm-workshop#readme",
+  "devDependencies": {
+    "elm": "^0.16.0"
+  }
+}
