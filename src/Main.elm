@@ -3,13 +3,16 @@ import Html.Events exposing (onClick)
 import StartApp.Simple as StartApp
 
 
+main : Signal Html.Html
 main =
   StartApp.start { model = model, view = view, update = update }
 
 
+model : number
 model = 0
 
 
+view : Signal.Address Action -> number -> Html.Html
 view address model =
   div []
     [ button [ onClick address Decrement ] [ text "-" ]
@@ -21,6 +24,7 @@ view address model =
 type Action = Increment | Decrement
 
 
+update : Action -> number -> number
 update action model =
   case action of
     Increment -> model + 1
